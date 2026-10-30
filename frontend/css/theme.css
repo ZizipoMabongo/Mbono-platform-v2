@@ -1,0 +1,75 @@
+/* Mbono Career Goals: three bright green themes. Switch with the dots at the bottom-left (remembered in the browser).
+   To change a colour, edit the variables in the theme blocks below. */
+:root,:root[data-theme="fresh"]{
+ --deep:#05553a;--h:#05553a;--brand:#087f50;--brand2:#0aa56a;--em:#22e39a;--mint:#a6f7d3;
+ --sage:#c3efd6;--sage2:#8fdcb3;--sage3:#5fc794;--bg:#dcf7e8;--bg2:#b4ecd0;--card:#f1fdf6;--field:#f9fffb;
+ --ink:#06301f;--mut:#2f6a50;--line:#9fe0bd;--chipink:#05553a;--ok:#0b8a4a;--bad:#c2372b;--missbg:#fbd9d4;--missink:#8a2a22;
+ --head1:#05603f;--head2:#0b9a62;--hero1:#06603f;--hero2:#14c580;
+ --ov1:rgba(5,85,58,.9);--ov2:rgba(8,125,82,.76);--ov3:rgba(20,197,128,.45);--btnink:#fff;--foot:#043d2a;--wm-op:.1;--wm-blend:multiply;--art1:#b8f7da;--art2:#5fd9a2;--artink:#05553a}
+:root[data-theme="meadow"]{
+ --deep:#27581f;--h:#27581f;--brand:#2a7d28;--brand2:#4aa63a;--em:#a3e635;--mint:#d9f99d;
+ --sage:#d5efb5;--sage2:#aedb7c;--sage3:#86c453;--bg:#ecf8d9;--bg2:#cdeea0;--card:#f7fdea;--field:#fbfff2;
+ --ink:#1a3512;--mut:#476a31;--line:#bde18b;--chipink:#27581f;--ok:#2f8a2b;--bad:#c2372b;--missbg:#fbd9d4;--missink:#8a2a22;
+ --head1:#2a6d22;--head2:#5aa832;--hero1:#2a6d22;--hero2:#8fd03e;
+ --ov1:rgba(31,80,24,.9);--ov2:rgba(52,120,34,.74);--ov3:rgba(120,190,50,.45);--btnink:#fff;--foot:#1d4217;--wm-op:.1;--wm-blend:multiply;--art1:#e4fbb0;--art2:#b0de66;--artink:#27581f}
+:root[data-theme="night"]{
+ --deep:#021a12;--h:#d9ffee;--brand:#19c985;--brand2:#34f0a1;--em:#34f0a1;--mint:#9ff7cd;
+ --sage:#10503a;--sage2:#1f7d5a;--sage3:#2aa076;--bg:#06291d;--bg2:#031a12;--card:#0c3b2b;--field:#0a3326;
+ --ink:#e7fff4;--mut:#9fd9bf;--line:#1d6c4c;--chipink:#bff5da;--ok:#5be6a4;--bad:#ff8f84;--missbg:rgba(255,143,132,.2);--missink:#ffb3aa;
+ --head1:#021f15;--head2:#06412d;--hero1:#03281b;--hero2:#0e7d54;
+ --ov1:rgba(2,26,18,.88);--ov2:rgba(4,60,40,.72);--ov3:rgba(20,150,100,.4);--btnink:#032014;--foot:#02150e;--wm-op:.09;--wm-blend:screen;--art1:#0f5a40;--art2:#1fa876;--artink:#d9ffee}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:linear-gradient(165deg,var(--bg) 0%,var(--bg2) 100%);background-attachment:fixed;color:var(--ink);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;min-height:100vh}
+h1,h2,h3{margin:0 0 .5rem;line-height:1.15;letter-spacing:-.01em}p{margin:0 0 1rem}a{color:inherit}
+.mut{color:var(--mut);font-size:.88rem}.ok{color:var(--ok)}.bad{color:var(--bad)}
+/* header: bright green bar */
+.top{position:sticky;top:0;z-index:30;background:linear-gradient(90deg,var(--head1),var(--head2));color:#fff;box-shadow:0 2px 14px rgba(3,60,40,.25)}
+.top .in{max-width:1180px;margin:auto;display:flex;align-items:center;gap:1rem;padding:.65rem 1.2rem;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.65rem;text-decoration:none;color:#fff}
+.brand img{width:44px;height:44px;border-radius:50%;box-shadow:0 0 0 2px rgba(255,255,255,.55)}.brand b{display:block;font-size:1.1rem;line-height:1.1}
+.brand small{display:block;font-size:.62rem;letter-spacing:.07em;color:var(--mint);font-weight:700;text-transform:uppercase}
+.top nav{display:flex;gap:1.05rem;flex:1;justify-content:center;flex-wrap:nowrap}
+.top nav a,.top nav button{background:none;border:0;color:#e6fff2;font:inherit;font-size:.92rem;font-weight:500;cursor:pointer;padding:.35rem 0;border-bottom:2px solid transparent;text-decoration:none;white-space:nowrap}
+.top nav .on,.top nav a:hover,.top nav button:hover{border-color:var(--em);color:#fff}
+.acts{display:flex;gap:.5rem;align-items:center;margin-left:auto}
+.top .btn{background:var(--em);border-color:var(--em);color:#04261a}.top .btn:hover{background:#5df0b8}
+.top .btn.o{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}.top .btn.o:hover{background:rgba(255,255,255,.16)}
+.top .who{color:#fff}.top .who small{color:var(--mint)}
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.4rem;background:var(--brand);color:var(--btnink);border:1px solid var(--brand);border-radius:9px;padding:.55rem 1.1rem;font:inherit;font-weight:600;cursor:pointer;text-decoration:none;transition:filter .15s,transform .15s}
+.btn:hover{filter:brightness(1.1);transform:translateY(-1px)}.btn.o{background:var(--card);color:var(--brand)}.btn.o:hover{background:var(--sage)}
+.btn.em{background:var(--em);border-color:var(--em);color:#04261a}.btn.glass{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.5);color:#fff}
+.btn.d{background:var(--bad);border-color:var(--bad);color:#fff}.btn.lg{padding:.85rem 1.5rem}.btn:disabled{opacity:.5;cursor:default;transform:none}
+.btn:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--em);outline-offset:2px}
+/* hero and page banners: bright gradient, photo slideshow, drifting emblem */
+.slides{position:absolute;inset:0;overflow:hidden}
+.sl{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;animation:fade 24s infinite,zoom 24s linear infinite}
+.sl:nth-child(2){animation-delay:8s}.sl:nth-child(3){animation-delay:16s}
+@keyframes fade{0%{opacity:0}8%,33%{opacity:1}41%,100%{opacity:0}}
+@keyframes zoom{from{transform:scale(1)}to{transform:scale(1.12)}}
+@keyframes drift{from{transform:translateY(-52%) rotate(-4deg)}to{transform:translateY(-46%) rotate(4deg)}}
+@media (prefers-reduced-motion:reduce){.sl,.wm{animation:none}.sl:first-child{opacity:1}}
+.hero,.pagebar{position:relative;overflow:hidden;color:#fff;background:linear-gradient(110deg,var(--hero1),var(--hero2))}
+.hero::after,.pagebar::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,var(--ov1) 0%,var(--ov2) 48%,var(--ov3) 100%)}
+.wm{position:absolute;z-index:1;right:-50px;top:50%;width:480px;opacity:.12;animation:drift 16s ease-in-out infinite alternate;pointer-events:none}
+.hero .in,.pagebar .bin{position:relative;z-index:6}
+.hero .in{max-width:1180px;margin:auto;padding:4.5rem 1.2rem}
+.pill{display:inline-block;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.14);border-radius:99px;padding:.25rem .9rem;font-size:.72rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;margin-bottom:1rem}
+.hero h1{text-transform:uppercase;font-size:clamp(2rem,5.2vw,3.6rem);line-height:1.04;font-weight:800;margin-bottom:1rem;text-shadow:0 2px 18px rgba(0,50,30,.25)}
+.hero h1 em{display:block;font-style:normal;color:var(--mint)}
+.lead{font-size:1.08rem;color:#ecfff5;max-width:40rem;margin-bottom:1.5rem}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.8rem;margin-top:2.2rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.28)}
+.stats div{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);border-radius:12px;padding:.9rem 1rem;font-size:.82rem;backdrop-filter:blur(4px)}
+.stats b{display:block;font-size:1.8rem;color:var(--mint);line-height:1.1}
+.pagebar{border-radius:14px;padding:1.5rem 1.6rem;margin-bottom:1.2rem;min-height:104px;box-shadow:0 8px 22px rgba(5,85,58,.22)}.pagebar h2{font-size:1.7rem;margin:0}.pagebar p{margin:.2rem 0 0;color:#e1fbee}.pagebar .wm{width:240px;right:-20px}
+.pagebar+h2{display:none}
+/* shared pieces */
+.art{aspect-ratio:200/110;overflow:hidden;border-radius:10px}.art svg{width:100%;height:100%;display:block}
+.av{width:42px;height:42px;border-radius:50%;background:var(--sage2);color:var(--deep);display:inline-grid;place-items:center;font-weight:700;overflow:hidden;flex:none}
+.av img{width:100%;height:100%;object-fit:cover}.av.lg{width:92px;height:92px;font-size:1.7rem}
+footer,.site-foot{background:linear-gradient(180deg,var(--foot),var(--deep));color:#cdeedd;padding:2.4rem 1.2rem 1.2rem;margin-top:2rem}
+.fg{max-width:1180px;margin:auto;display:grid;gap:1.6rem;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+footer h4{color:#fff;margin:0 0 .5rem}footer a{display:block;color:#cdeedd;text-decoration:none;margin:.25rem 0;font-size:.92rem}footer a:hover{color:#fff}
+footer small,.legal{display:block;max-width:1180px;margin:1.4rem auto 0;opacity:.8;font-size:.82rem}
+.mbwm{mix-blend-mode:var(--wm-blend,multiply)}
+@media(max-width:860px){.top nav{order:3;flex:1 1 100%;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;gap:1rem}body#top .top nav{display:none}}
